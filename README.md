@@ -53,9 +53,9 @@ std::string result = NFD::OpenFileDialogue();
 You might want to restrict, which files the user can use or save and for that we use filters.
 to use filters on file dialogues, you will have to follow this format.
 - All filters are inside a single string
-- Each format will be written as such: "*.exe", "*.ttf", etc.
-- Multiple formats will be seperated by ';': "*.exe;*.ttf"
-- To be able to choose ALL files, either use no filters or define it as such "*", "*.exe;*"
+- Each format will be written as such: "\*.exe", "\*.ttf", etc.
+- Multiple formats will be seperated by ';': "\*.exe;\*.ttf"
+- To be able to choose ALL files, either use no filters or define it as such "\*", "\*.exe;*"
 ```cpp
 std::string result = NFD::OpenFileDialogue("*.exe;*.ttf;*");
 ```
