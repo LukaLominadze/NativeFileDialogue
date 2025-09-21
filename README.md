@@ -20,7 +20,13 @@ Start cloning the repository with ```git clone https://github.com/LukaLominadze/
 
 <ins>**2. Building the project:**</ins>
 
+- *With premake*
+
 After cloning the repository, go to the ```Scripts``` directory and run the ```Setup.py``` file.
+
+- *With cmake*
+
+After cloning the repository, run ```cmake -B build -G "BUILD_TYPE" .``` where BUILD_TYPE specifies what system to build for. for ex. ```cmake -B build -G "Visual Studio 17 2022" .```
 
 You can build the ```Test``` project to get familiar with the library.
 
@@ -28,7 +34,6 @@ You can build the ```Test``` project to get familiar with the library.
 If you want to just use the library right away, Copy the ```NativeFileDialogue.h``` and ```NativeFileDialogue.cpp``` files from https://github.com/LukaLominadze/NativeFileDialogue/tree/main/NativeFileDialogue/src directory
 
 ## Project goals
-- CMake support
 - Linux (Ubuntu and Debian) support
 - MacOs support
 
