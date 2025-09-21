@@ -2,7 +2,7 @@
 Utility library for opening file/folder/save dialogues on your native platform
 
 ## Platform
-This project is primarly supported on Windows.
+This project is primarly supported on Windows (MSVC compiler tested).
 Linux (Ubuntu, Debian) and MacOs support is in development.
 
 ## C++
