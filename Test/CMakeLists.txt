@@ -28,12 +28,12 @@ target_link_libraries(Test PRIVATE
 
 # Configurations flags
 if(CMAKE_BUILD_TYPE STREQUAL "Debug")
-    target_compile_definitions(Kakali PRIVATE _DEBUG _CONSOLE)
-    set_property(TARGET Kakali PROPERTY MSVC_RUNTIME_LIBRARY "MultiThreadedDebugDLL")
+    target_compile_definitions(Test PRIVATE _DEBUG _CONSOLE)
+    set_property(TARGET Test PROPERTY MSVC_RUNTIME_LIBRARY "MultiThreadedDebugDLL")
 elseif(CMAKE_BUILD_TYPE STREQUAL "Release")
-    target_compile_definitions(Kakali PRIVATE NDEBUG _CONSOLE)
-    set_property(TARGET Kakali PROPERTY MSVC_RUNTIME_LIBRARY "MultiThreadedDLL")
+    target_compile_definitions(Test PRIVATE NDEBUG _CONSOLE)
+    set_property(TARGET Test PROPERTY MSVC_RUNTIME_LIBRARY "MultiThreadedDLL")
 elseif(CMAKE_BUILD_TYPE STREQUAL "Distribution")
-    target_compile_definitions(Kakali PRIVATE DISTRIBUTION)
-    set_property(TARGET Kakali PROPERTY MSVC_RUNTIME_LIBRARY "MultiThreadedDLL")
+    target_compile_definitions(Test PRIVATE DISTRIBUTION)
+    set_property(TARGET Test PROPERTY MSVC_RUNTIME_LIBRARY "MultiThreadedDLL")
 endif()
